@@ -5,9 +5,9 @@ const clearBtn =document.querySelector('.btn-clear');
 
 for(let i=0; i< btns.length; i++){
     btns[i].addEventListener('click',function(){
-        let number= btns[i].getAttribute['data-num'];
+        let number= btns[i].getAttribute('data-num');
         screen.value += number;
-        console.log(screen.value);
+        console.log(number);
     })
 }
 
