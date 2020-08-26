@@ -23,7 +23,7 @@ html,body{
 }
 
 .circular .inner{
-    display: none;
+    
     position: absolute;
     z-index: 6;
     top: 50%;
@@ -34,6 +34,17 @@ html,body{
     background:#dde6f0;
     border-radius: 100%;
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.circular .numb{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    z-index: 10;
+    font-size: 18px;
+    font-weight:500;
+    color: #4158d0;
 }
 
 .circular .bar{
@@ -72,7 +83,7 @@ html,body{
     transform: rotate(180deg);
 }
 
-.circle .right.progress{
+.circle .right .progress{
     animation:right 4s linear both;
     animation-delay: 4s;
 }
