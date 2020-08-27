@@ -5,8 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
-    
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img">
+                <img src="one-pictures.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">
+                    Home Design
+                </div>
+                <div class="sub-title">
+                    Graphic Designer
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat modi ea quo dolorem totam commodi quisquam iure laboriosam architecto vitae doloribus, ipsum at excepturi voluptatibus. Laborum sunt eos aliquid dicta!</p>
+
+                <div class="btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="three-pictures.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">
+                    Home Design
+                </div>
+                <div class="sub-title">
+                    Graphic Designer
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat modi ea quo dolorem totam commodi quisquam iure laboriosam architecto vitae doloribus, ipsum at excepturi voluptatibus. Laborum sunt eos aliquid dicta!</p>
+
+                <div class="btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="four-pictures.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">
+                    Ev Design
+                </div>
+                <div class="sub-title">
+                    Web Designer
+
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat modi ea quo dolorem totam commodi quisquam iure laboriosam architecto vitae doloribus, ipsum at excepturi voluptatibus. Laborum sunt eos aliquid dicta!</p>
+
+                <div class="btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        $(".slider").owlCarousel({
+           loop:true,
+           autoplay:true,
+           autoplayTimeout:1000,
+           autoplayHoverPause:true,
+
+            
+           
+        });
+    </script>
 </body>
 </html>
