@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
@@ -11,13 +12,13 @@
             Password Strength Indicator
             <form action="#">
                 <div class="field">
-                    <input type="password" placeholder="TypePassword">
+                    <input onkeyup="trigger()" type="password" placeholder="TypePassword">
                     <span class="showBtn">Show</span>
                 </div>
                 <div class="indicator">
-                    <span class="weak" >1</span>
-                    <span class="medium" >2</span>
-                    <span class="strong" >3</span>
+                    <span class="weak" ></span>
+                    <span class="medium"></span>
+                    <span class="strong"></span>
                 </div>
                 <div class="text">
                     Your Password is to week
@@ -25,5 +26,7 @@
             </form>
         </header>
     </div>
+
+    <script src="/script.js"></script>
 </body>
 </html>
