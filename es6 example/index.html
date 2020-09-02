@@ -6,24 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="demo">
+        
+    </div>
+    <div id="demos">
+
+    </div>
     
     <script>
-        class Pc{
-            constructor(ozellikler,deger){
-                this.ram = ozellikler;
-                this.ekrankarti=ozellikler;
-               
-            }
+      hello  =function(val){
+          return "Hello"+val
+      }
 
-        }
+      document.getElementById("demo").innerHTML=hello(" Ahmet");
 
-        myscreen=new Pc(" 2 gb");
-        mypc=new Pc("16 gb");
-       
+      ali=()=>{
+          return "Hello Ali";
+      }
 
-        document.write(mypc.ram);
-        document.write(myscreen.ekrankarti);
-
+      document.getElementById("demos").innerHTML=ali();
 
     </script>
 </body>
