@@ -1,32 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './components/examples';
 import User from './components/User';
 import Navbar from './components/Navbar';
+import Users from './components/Users';
 
-function App() {
-  return (
-    <div className="container">
-      <Navbar title="User App 2"/>
-      <User
-      name="ALİ GÜMRÜKÇÜ"
-      salary="5500"
-      Job="Yazılım"
-      />
-       <User
-      name="Ahmet GÜMRÜKÇÜ"
-      salary="6500"
-      Job="Yazılım"
-      />
-       <User
-      name="Furkan GÜMRÜKÇÜ"
-      salary="6500"
-      Job="Yazılım"
-      />
-    </div>
+
+
+class App extends Component{
+  state={
+    users:[
+      {
+        id:1,
+        name:"ALİ GUMRUKCU",
+        department:"Bilişim",
+
+      },
+      {
+        id:2,
+        name:"Ahmet Kaya",
+        department:"Yazılım",
+        
+      },
+      {
+        id:3,
+        name:"Fatih Ayfam",
+        department:"Bilişim",
+        
+      }
+     
+    ]
+
+  }
+    render(){
+      return (
+        <div className="container">
+         
+         < Users users={this.state.users}/>
+        </div>
+      
+      )
+    }
   
-  )
 
 }
 
