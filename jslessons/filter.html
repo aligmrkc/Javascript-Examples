@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myfunction()">Try</button>
+    <script>
+        var yas=[5,6,8,9,15,12,45,76,"58"];
+        function kontrol(yas){
+            return yas>8;
+        }
+
+        function myfunction(){
+            document.getElementById("demo").innerHTML=yas.filter(kontrol);
+        }
+    </script>
+</body>
+</html>
