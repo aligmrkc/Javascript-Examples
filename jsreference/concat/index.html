@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <p id="demo"></p>
+  <button onclick="myfunction()">Gönder</button>
+  <p id="demos"></p>
+   
+  <script>
+    var dizim=[60,50,254,70,80,90,100,200,300];
+    document.getElementById("demo").innerHTML=dizim;
+
+
+    function myfunction(){
+      dizim.splice(3,2,2000,400);
+      document.getElementById("demos").innerHTML=dizim;
+    }
+  </script>
+
+    
+   
+</body>
+</html>
