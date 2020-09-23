@@ -6,20 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"></p>
+    <button onclick="myfunction()">Gönder</button>
+   <p id="demo"></p>
+   
 
-   <script>
-       var isim=["ALİ","AHMET","RAMAZAN","OMER","RASIM","CAFER","SADIk"];
-       var text="";
-       var i;
+  <script>
+      class Car{
+          constructor(brand){
+              this.carname=brand;
+          }
+          present(){
+              return 'I have a'+this.carname;
+          }
 
-       for(i=0;i<isim.length;i++){
-           text+=isim[i]+"<br/>";
+      }
 
-       }
+      class Model extends Car{
+          constructor(brand,mod){
+              super(brand);
+              this.model=mod;
+          }
 
-       document.getElementById("demo").innerHTML=text;
-   </script>
-    
+          show(){
+              return this.present()+'it is a'+this.model;
+          }
+      }
+
+      mycar=new Model("Toyota","Renoo");
+      document.getElementById("demo").innerHTML=mycar.show();
+  </script>
 </body>
 </html>
