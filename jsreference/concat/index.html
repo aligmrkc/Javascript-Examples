@@ -7,19 +7,25 @@
 </head>
 <body>
     
-  <p id="demo"></p>
-  <button onclick="myfunction()">Gönder</button>
-  <p id="demos"></p>
-   
   <script>
-    var dizim=[60,50,254,70,80,90,100,200,300];
-    document.getElementById("demo").innerHTML=dizim;
-
-
-    function myfunction(){
-      dizim.splice(3,2,2000,400);
-      document.getElementById("demos").innerHTML=dizim;
+  function A(x,y){
+    this.x=x;
+    this.y=y;
+    this.carp=function(){
+      return this.x*this.y;
     }
+  }
+
+  function B(z){
+    this.z=z;
+
+  }
+
+  B.prototype=new A(x,y);
+  var o1=new A(10,20);
+  var o2=new B(30);
+
+    
   </script>
 
     
